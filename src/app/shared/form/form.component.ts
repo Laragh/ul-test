@@ -14,13 +14,14 @@ export class FormComponent implements OnInit {
   factorialAnswer = 0;
 
   ngOnInit() {
+    // autofocus element for user
     this.numberField.nativeElement.focus();
+    // update onscreen text content on input change
+    // so answer displayed is removed if number value has changed
     this.number.valueChanges.subscribe(val => {
       this.factorialAnswer = 0;
     });
   }
-
-
 
   // The factorial function (symbol: !) says to multiply all whole numbers 
   // from our chosen number down to 1.

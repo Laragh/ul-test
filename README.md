@@ -1,6 +1,29 @@
 # UlTest
 
+Task: Find the Factorial coding challenge
+
+Write a program that allows a user to enter a number, and then calculate the factorial of that number
+and print it on screen. Your program should accept and validate user input, find the factorial, and print
+the answer.
+
+Expectations:
+Write your code in Angular.
+Handle any exception conditions appropriately.
+Include a set of unit tests.
+Use any tool you want to write the code and return it in a separate file that can be read in
+Notepad, Word, or Visual Studio.
+Code and unit tests should be runnable.
+
+# UlTest Angular Project
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+The task was completed as described.
+An autofocus was added to the number input field.
+Form Validation and error messages are displayed.
+Unit tests are written to test the validation and the factorial function.
+Minor styling using AirBnb OOCSS style (scss)
+Routing is added
+Shared module which holds shared components is demonstrated (shared/form.component)
+Code is commented
 
 ## Development server
 
