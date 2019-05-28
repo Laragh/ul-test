@@ -1,0 +1,30 @@
+<div class="Form__Section">
+  <h1 class="Form__H1">Factorial Calculator</h1>
+  <label class="Form__Label">
+    Enter number:
+  </label>
+  <input #numberInput class="Form__Input" type="text" [formControl]="number" pattern="^[1-9]+[0-9]*$">
+
+
+  <div *ngIf="number.errors && number.value.length" class="Form__Error">
+    <p>Please enter positive number only</p>
+  </div>
+
+  <div class="Form__Container" *ngIf="factorialAnswer===0">
+    <p>
+      Enter a number and click below to view its calculated factorial answer
+    </p>
+  </div>
+
+  <div class="Form__Container" *ngIf="factorialAnswer>0 && !number.errors">
+    <p>
+      The factorial number of <b>{{number.value}}</b> is <b>{{ factorialAnswer }}</b>
+    </p>
+  </div>
+
+
+  <button class="Form__Button" (click)="returnFactorial()" [disabled]="number.errors || !number.value.length">
+    <p>Update Number</p>
+  </button>
+
+</div>

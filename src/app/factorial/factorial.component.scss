@@ -1,0 +1,11 @@
+.Factorial {
+  &__Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
