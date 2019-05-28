@@ -2,6 +2,9 @@
   &__Section {
     background: lighten(#007bff, 45%);
     padding: 40px 20px;
+    width: 90%;
+    min-width: 550px;
+
   }
 
   &__H1 {
